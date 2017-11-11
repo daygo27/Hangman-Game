@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Signika+Negative:600" rel="stylesheet">
+        
+
+
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+  <div class="jumbotron jumbotron-fluid jumbobox">
+  <div class="container">
+    <h1 class="display-3">Hangman</h1>
+    <p class="lead">Click any letter to begin.</p>
+  </div>
+</div>
+       
+        <h3>Hint: Photography/Camera Terms</h3>
+        <img src="assets/images/Canon_FT_alvesgaspar_new.jpg">
+       <p id="wordBlanks">_ _ _ _ _ _ </p>
+
+      <div class="sizing">   
+       <p>
+        <div id="guessbox">
+       Letters Guessed:  <span id="wrongGuesses"></span><br>
+     </div>
+     <div id="guessremainbox">
+        Guesses Remaining: <span id="guessesLeft"> 9</span><br>
+      </div>
+      <div id="winsbox">
+        Wins: <span id="winCounter"> 0</span><br>
+      </div>
+      <div id="lossbox">
+        Losses: <span id="lossCounter"> 0</span></p>
+        </div>
+
+       <input name="refresh" type="button" value="New Game" onClick="location.reload()">
+
+</div>
+    <script src="assets/javascript/hangman.js"></script>
+</body>
+</html>
